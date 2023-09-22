@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("wallpaper 1.jpg")
+        }
+        
+        .container {
+            max-width: 450px;
+            margin: 0 auto;
+            background-color: #32b498;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 0px 50px 0px #84eba6;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        nput[type="number"],
+        select,
+        textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2><u><strong> Sign Up</strong></u></h2>
+        <form action="Sign-up" method="post">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" maxlength="10" placeholder="Enter Your Ten Digit Phone Number"><br/>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0"><br/>
+            <input type="checkbox" id="agree_terms" name="agree_terms" required>
+            <label for="agree_terms" align="center">I agree with <a href="terms-and-conditions" >Terms and Conditions</a></label>
+            <p align="center">Already have an account? <a href="Q5 Sign in.html">Sign In</a></p>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+
+</html>

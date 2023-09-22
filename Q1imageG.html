@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body,
+        {
+            background: #ecf4fb;
+        }
+        
+        .gallery {
+            width: 80%;
+            margin: 100px auto 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.5);
+        }
+        
+        .image {
+            margin: 10px;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <title>
+        Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 align="center">Image Gallery Assignment</h1>
+    <h2 align="center">Marvel Superheroes</h2>
+    <div class="gallery">
+        <div class="image"><img src="captain.jpg" alt="Captain"></div>
+        <div class="image"><img src="ironman.jpg" alt="Iron Man"></div>
+        <div class="image"><img src="panthar.jpg" alt="Black Panthar"></div>
+        <div class="image"><img src="hulk.jpg" alt="Hulk"></div>
+        <div class="image"><img src="thor.jpg" alt="Thor"></div>
+        <div class="image"><img src="spiderman.jpg" alt="Spiderman"></div>
+        <div class="image"><img src="loki.jpg" alt="Loki"></div>
+        <div class="image"><img src="strange.jpg" alt="Dr strange"></div>
+        <div class="image"><img src="wolvorine.png" alt="Wolvorine"></div>
+        <div class="image"><img src="deadpool.jpg" alt="Deadpool"></div>
+    </div>
+</body>
+
+</html>
